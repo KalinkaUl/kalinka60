@@ -1,0 +1,68 @@
+@import url(tokens.css);
+@import url(colors.module.css);
+@import url(typography.module.css);
+@import url(theme.light.css) (prefers-color-scheme: light);
+@import url(theme.dark.css) (prefers-color-scheme: dark);
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('../css/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar a {
+  color: var(--md-sys-color-on-primary);
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: var(--md-sys-color-on-primary);
+  color: var(--md-sys-color-primary);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+}
+
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+section {
+  color: var(--md-sys-color-on-surface-variant);
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.theme {
+  float: right;
+}
+
+.header {
+  padding: 1rem;
+  background-color: var(--var-header-bg);
+  border-bottom: .1rem solid var(--var-body-fc);
+}
+
+.content {
+  padding: 1rem;
+}
